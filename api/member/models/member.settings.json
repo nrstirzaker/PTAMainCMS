@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "member",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "bio": {
+      "type": "richtext"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Staff_Representative",
+        "Parent",
+        "Secretary",
+        "Chair",
+        "Treasurer",
+        "Second_Hand_Uniform"
+      ]
+    },
+    "visual_order": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
+    }
+  }
+}
