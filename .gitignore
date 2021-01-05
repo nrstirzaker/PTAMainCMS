@@ -117,3 +117,5 @@ package-lock.json
 .env.example
 .eslintignore
 .eslintrc
+
+config/plugins.js
