@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meetings",
+  "info": {
+    "name": "Meetings Dates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "datetime"
+    }
+  }
+}

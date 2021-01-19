@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "uniform_sale_dates",
+  "info": {
+    "name": "Uniform Sale Dates"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "datetime"
+    }
+  }
+}

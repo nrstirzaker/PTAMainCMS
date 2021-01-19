@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/uniform-sale-dates",
+      "handler": "uniform-sale-dates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uniform-sale-dates/count",
+      "handler": "uniform-sale-dates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uniform-sale-dates/:id",
+      "handler": "uniform-sale-dates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/uniform-sale-dates",
+      "handler": "uniform-sale-dates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/uniform-sale-dates/:id",
+      "handler": "uniform-sale-dates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/uniform-sale-dates/:id",
+      "handler": "uniform-sale-dates.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
