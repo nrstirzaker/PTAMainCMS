@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/uniforms",
+      "handler": "uniforms.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uniforms/count",
+      "handler": "uniforms.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uniforms/:id",
+      "handler": "uniforms.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/uniforms",
+      "handler": "uniforms.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/uniforms/:id",
+      "handler": "uniforms.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/uniforms/:id",
+      "handler": "uniforms.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

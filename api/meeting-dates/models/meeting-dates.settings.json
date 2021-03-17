@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meeting_dates",
+  "info": {
+    "name": "Meeting Dates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "Time": {
+      "type": "time",
+      "default": "18:30:00",
+      "required": true
+    }
+  }
+}

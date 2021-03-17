@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "members",
   "info": {
-    "name": "member",
+    "name": "Members",
     "description": ""
   },
   "options": {
@@ -11,35 +11,25 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "bio": {
-      "type": "richtext"
+    "Name": {
+      "type": "string"
     },
-    "photo": {
+    "Role": {
+      "type": "string"
+    },
+    "Photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
     },
-    "name": {
-      "type": "string"
+    "Bio": {
+      "type": "richtext"
     },
-    "role": {
-      "type": "enumeration",
-      "enum": [
-        "Staff_Representative",
-        "Parent",
-        "Secretary",
-        "Chair",
-        "Treasurer",
-        "Second_Hand_Uniform"
-      ]
-    },
-    "visual_order": {
+    "Visual_Order": {
       "type": "integer",
       "required": true,
       "unique": true,

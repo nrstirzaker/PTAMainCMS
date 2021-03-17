@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "uniforms",
+  "info": {
+    "name": "uniforms",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Boys",
+        "Girls",
+        "Unisex"
+      ],
+      "required": true
+    },
+    "Item_Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "PE_Only": {
+      "type": "boolean"
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Boys",
+        "Girls",
+        "General",
+        "PE"
+      ]
+    }
+  }
+}
