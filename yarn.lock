@@ -9713,7 +9713,7 @@ strapi-provider-email-sendgrid@^3.5.3:
     "@sendgrid/mail" "6.4.0"
     strapi-utils "3.5.3"
 
-strapi-provider-email-sendmail@3.5.3:
+strapi-provider-email-sendmail@3.5.3, strapi-provider-email-sendmail@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/strapi-provider-email-sendmail/-/strapi-provider-email-sendmail-3.5.3.tgz#a19825c1f4ec89ac3e229ca70730222c04280dc0"
   integrity sha512-jaS8MzY7H1xFe6VyzQAKmehgTiMHW2caA5IlauzyKsLdESh2t2cG6R05R+BKXxckQqrcYx7lCHO87fdPcdfa0w==
